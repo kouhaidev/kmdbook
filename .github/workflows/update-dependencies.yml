@@ -8,7 +8,7 @@ jobs:
   update:
     name: Update dependencies
     runs-on: ubuntu-latest
-    if: github.repository == 'rust-lang/mdBook'
+    if: github.repository == 'kouhaidev/kmdbook'
     steps:
       - uses: actions/checkout@v5
       - name: Install Rust

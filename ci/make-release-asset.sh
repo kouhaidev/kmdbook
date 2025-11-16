@@ -7,32 +7,32 @@ then
   echo "GITHUB_REF must be set"
   exit 1
 fi
-# Strip mdbook-refs/tags/ from the start of the ref.
+# Strip kmdbook-refs/tags/ from the start of the ref.
 TAG=${GITHUB_REF#*/tags/}
 
 host=$(rustc -Vv | grep ^host: | sed -e "s/host: //g")
 target=$2
 export CARGO_PROFILE_RELEASE_LTO=true
-cargo build --locked --bin mdbook --release --target $target
+cargo build --locked --bin kmdbook --release --target $target
 cd target/$target/release
 case $1 in
   ubuntu*)
-    asset="mdbook-$TAG-$target.tar.gz"
-    tar czf ../../$asset mdbook
+    asset="kmdbook-$TAG-$target.tar.gz"
+    tar czf ../../$asset kmdbook
     ;;
   macos*)
-    asset="mdbook-$TAG-$target.tar.gz"
+    asset="kmdbook-$TAG-$target.tar.gz"
     # There is a bug with BSD tar on macOS where the first 8MB of the file are
     # sometimes all NUL bytes. See https://github.com/actions/cache/issues/403
     # and https://github.com/rust-lang/cargo/issues/8603 for some more
     # information. An alternative solution here is to install GNU tar, but
     # flushing the disk cache seems to work, too.
     sudo /usr/sbin/purge
-    tar czf ../../$asset mdbook
+    tar czf ../../$asset kmdbook
     ;;
   windows*)
-    asset="mdbook-$TAG-$target.zip"
-    7z a ../../$asset mdbook.exe
+    asset="kmdbook-$TAG-$target.zip"
+    7z a ../../$asset kmdbook.exe
     ;;
   *)
     echo "OS should be first parameter, was: $1"

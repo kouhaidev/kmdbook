@@ -429,7 +429,7 @@ impl BookCommand {
 
     /// Runs the command, and verifies the output.
     fn run(&mut self) {
-        let mut cmd = Command::new(env!("CARGO_BIN_EXE_mdbook"));
+        let mut cmd = Command::new(env!("CARGO_BIN_EXE_kmdbook"));
         cmd.current_dir(&self.dir)
             .args(&self.args)
             .env_remove("MDBOOK_LOG")
