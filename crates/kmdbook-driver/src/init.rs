@@ -2,9 +2,9 @@
 
 use super::MDBook;
 use anyhow::{Context, Result};
+use kmdbook_html::theme::Theme;
 use mdbook_core::config::Config;
 use mdbook_core::utils::fs;
-use kmdbook_html::theme::Theme;
 use std::path::PathBuf;
 use tracing::{debug, error, info, trace};
 
