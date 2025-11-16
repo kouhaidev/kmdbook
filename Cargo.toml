@@ -1,0 +1,34 @@
+[workspace]
+members = [
+    ".",
+]
+
+[workspace.package]
+edition = "2024"
+license = "MPL-2.0"
+repository = "https://github.com/rust-lang/mdBook"
+rust-version = "1.88.0" # Keep in sync with installation.md and .github/workflows/main.yml
+
+[workspace.dependencies]
+
+[package]
+name = "kmdbook"
+version = "0.0.0-ourhardworkbythesewordsguardedpleasedontsteal"
+authors = []
+documentation = "https://rust-lang.github.io/mdBook/index.html"
+edition.workspace = true
+exclude = ["/guide/*"]
+license.workspace = true
+repository.workspace = true
+description = "Creates a book from markdown files"
+rust-version.workspace = true
+
+[dependencies]
+
+[dev-dependencies]
+
+[features]
+
+[[bin]]
+doc = false
+name = "kmdbook"
