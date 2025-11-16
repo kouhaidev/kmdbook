@@ -1,7 +1,7 @@
 //! Helpers for building the command-line arguments for commands.
 
 pub use clap::{Arg, ArgMatches, Command, arg};
-use mdbook_driver::MDBook;
+use kmdbook_driver::MDBook;
 use std::path::PathBuf;
 
 pub trait CommandExt: Sized {

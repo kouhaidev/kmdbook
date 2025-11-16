@@ -90,9 +90,9 @@ rust-version.workspace = true
 anyhow.workspace = true
 clap.workspace = true
 clap_complete.workspace = true
+kmdbook-driver.workspace = true
+kmdbook-html.workspace = true
 mdbook-core.workspace = true
-mdbook-driver.workspace = true
-mdbook-html.workspace = true
 mdbook-markdown.workspace = true
 mdbook-preprocessor.workspace = true
 mdbook-renderer.workspace = true
@@ -129,7 +129,7 @@ walkdir.workspace = true
 default = ["watch", "serve", "search"]
 watch = ["dep:notify", "dep:notify-debouncer-mini", "dep:ignore", "dep:pathdiff", "dep:walkdir"]
 serve = ["dep:futures-util", "dep:tokio", "dep:axum", "dep:tower-http"]
-search = ["mdbook-html/search"]
+search = ["kmdbook-html/search"]
 
 [[bin]]
 doc = false

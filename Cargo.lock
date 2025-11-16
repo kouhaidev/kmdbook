@@ -832,9 +832,9 @@ dependencies = [
  "futures-util",
  "glob",
  "ignore",
+ "kmdbook-driver",
+ "kmdbook-html",
  "mdbook-core",
- "mdbook-driver",
- "mdbook-html",
  "mdbook-markdown",
  "mdbook-preprocessor",
  "mdbook-renderer",
@@ -1053,30 +1053,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "mdbook-driver"
-version = "0.5.0-beta.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e2fab606b93fa968fadd9d080d6dc683b5921abcf5b2ed9431c658205bdc648f"
-dependencies = [
- "anyhow",
- "indexmap",
- "mdbook-core",
- "mdbook-html",
- "mdbook-markdown",
- "mdbook-preprocessor",
- "mdbook-renderer",
- "mdbook-summary",
- "regex",
- "serde",
- "serde_json",
- "shlex",
- "tempfile",
- "toml",
- "topological-sort",
- "tracing",
-]
-
-[[package]]
 name = "mdbook-html"
 version = "0.5.0-beta.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1084,7 +1060,6 @@ checksum = "ee2b83a812fea6a3a17e80ba7dab7f08da08d7ef873799cf3e05e5d49262bd6f"
 dependencies = [
  "anyhow",
  "ego-tree",
- "elasticlunr-rs",
  "font-awesome-as-a-crate",
  "handlebars",
  "hex",

@@ -1,8 +1,8 @@
 //! Utility for building and running tests against mdbook.
 
+use kmdbook_driver::MDBook;
+use kmdbook_driver::init::BookBuilder;
 use mdbook_core::utils::fs;
-use mdbook_driver::MDBook;
-use mdbook_driver::init::BookBuilder;
 use snapbox::IntoData;
 use std::collections::BTreeMap;
 use std::path::{Path, PathBuf};

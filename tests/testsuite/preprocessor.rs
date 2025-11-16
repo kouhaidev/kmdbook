@@ -3,8 +3,8 @@
 use crate::book_test::list_all_files;
 use crate::prelude::*;
 use anyhow::Result;
+use kmdbook_driver::builtin_preprocessors::CmdPreprocessor;
 use mdbook_core::book::{Book, BookItem, Chapter};
-use mdbook_driver::builtin_preprocessors::CmdPreprocessor;
 use mdbook_preprocessor::{Preprocessor, PreprocessorContext};
 use snapbox::IntoData;
 use std::sync::{Arc, Mutex};

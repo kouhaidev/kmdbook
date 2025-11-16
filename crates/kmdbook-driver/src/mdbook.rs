@@ -112,8 +112,8 @@ impl MDBook {
     /// Returns a flat depth-first iterator over the [`BookItem`]s of the book.
     ///
     /// ```no_run
-    /// # use mdbook_driver::MDBook;
-    /// # use mdbook_driver::book::BookItem;
+    /// # use kmdbook_driver::MDBook;
+    /// # use kmdbook_driver::book::BookItem;
     /// # let book = MDBook::load("mybook").unwrap();
     /// for item in book.iter() {
     ///     match *item {

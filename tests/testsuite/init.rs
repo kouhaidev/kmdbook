@@ -1,8 +1,8 @@
 //! Tests for `mdbook init`.
 
 use crate::prelude::*;
+use kmdbook_driver::MDBook;
 use mdbook_core::config::Config;
-use mdbook_driver::MDBook;
 use std::path::PathBuf;
 
 // Tests "init" with no args.

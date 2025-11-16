@@ -35,8 +35,8 @@
 //! the [`MDBook::init()`] method.
 //!
 //! ```rust,no_run
-//! use mdbook_driver::MDBook;
-//! use mdbook_driver::config::Config;
+//! use kmdbook_driver::MDBook;
+//! use kmdbook_driver::config::Config;
 //!
 //! let root_dir = "/path/to/book/root";
 //!
@@ -55,7 +55,7 @@
 //! You can also load an existing book and build it.
 //!
 //! ```rust,no_run
-//! use mdbook_driver::MDBook;
+//! use kmdbook_driver::MDBook;
 //!
 //! let root_dir = "/path/to/book/root";
 //!

@@ -3,7 +3,7 @@ use crate::get_book_dir;
 use anyhow::Result;
 use clap::ArgAction;
 use clap::builder::NonEmptyStringValueParser;
-use mdbook_driver::MDBook;
+use kmdbook_driver::MDBook;
 
 // Create clap subcommand arguments
 pub fn make_subcommand() -> Command {

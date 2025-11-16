@@ -9,7 +9,7 @@ use axum::routing::get;
 use clap::builder::NonEmptyStringValueParser;
 use futures_util::StreamExt;
 use futures_util::sink::SinkExt;
-use mdbook_driver::MDBook;
+use kmdbook_driver::MDBook;
 use std::net::{SocketAddr, ToSocketAddrs};
 use std::path::PathBuf;
 use tokio::sync::broadcast;
