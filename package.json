@@ -1,9 +1,10 @@
 {
   "dependencies": {
-    "browser-ui-test": "0.22.3"
+    "browser-ui-test": "0.22.3",
+    "eslint": "^9.34.0"
   },
   "scripts": {
-    "lint": "true",
-    "lint-fix": "true"
+    "lint": "eslint --no-warn-ignored crates/kmdbook-html/front-end/*js crates/kmdbook-html/front-end/**/*js crates/kmdbook-html/front-end/**/*js.hbs",
+    "lint-fix": "eslint --fix crates/kmdbook-html/front-end/*js crates/kmdbook-html/front-end/**/*js"
   }
 }

@@ -823,7 +823,7 @@ checksum = "4a5f13b858c8d314ee3e8f639011f7ccefe71f97f96e50151fb991f267928e2c"
 
 [[package]]
 name = "kmdbook"
-version = "0.1.0-beta.2"
+version = "0.1.0-beta.2.1"
 dependencies = [
  "anyhow",
  "axum",
@@ -855,6 +855,54 @@ dependencies = [
  "tracing",
  "tracing-subscriber",
  "walkdir",
+]
+
+[[package]]
+name = "kmdbook-driver"
+version = "0.1.0-beta.2.1"
+dependencies = [
+ "anyhow",
+ "indexmap",
+ "kmdbook-html",
+ "mdbook-core",
+ "mdbook-html",
+ "mdbook-markdown",
+ "mdbook-preprocessor",
+ "mdbook-renderer",
+ "mdbook-summary",
+ "regex",
+ "serde",
+ "serde_json",
+ "shlex",
+ "tempfile",
+ "toml",
+ "topological-sort",
+ "tracing",
+]
+
+[[package]]
+name = "kmdbook-html"
+version = "0.1.0-beta.2.1"
+dependencies = [
+ "anyhow",
+ "ego-tree",
+ "elasticlunr-rs",
+ "font-awesome-as-a-crate",
+ "handlebars",
+ "hex",
+ "html5ever 0.35.0",
+ "indexmap",
+ "mdbook-core",
+ "mdbook-markdown",
+ "mdbook-renderer",
+ "pulldown-cmark",
+ "regex",
+ "serde",
+ "serde_json",
+ "sha2",
+ "tempfile",
+ "toml",
+ "tracing",
 ]
 
 [[package]]

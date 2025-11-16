@@ -1,6 +1,8 @@
 [workspace]
 members = [
     ".",
+    "crates/kmdbook-driver",
+    "crates/kmdbook-html",
     "examples/remove-emphasis/mdbook-remove-emphasis", "guide/guide-helper",
 ]
 
@@ -38,6 +40,8 @@ hex = "0.4.3"
 html5ever = "0.35.0"
 indexmap = "2.12.0"
 ignore = "0.4.25"
+kmdbook-driver = { path = "crates/kmdbook-driver", version = "0.1.0-beta.2.1" }
+kmdbook-html = { path = "crates/kmdbook-html", version = "0.1.0-beta.2.1" }
 mdbook-core = { version = "0.5.0-beta.2" }
 mdbook-driver = { version = "0.5.0-beta.2" }
 mdbook-html = { version = "0.5.0-beta.2" }
@@ -70,7 +74,7 @@ walkdir = "2.5.0"
 
 [package]
 name = "kmdbook"
-version = "0.1.0-beta.2"
+version = "0.1.0-beta.2.1"
 authors = []
 documentation = "https://rust-lang.github.io/mdBook/index.html"
 edition.workspace = true
